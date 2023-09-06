@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // ... your content here
+  transpilePackages: ["react-daisyui"],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
