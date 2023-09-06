@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Q Helados - Tu sitio de helados ideal",
+  name: "K Helados - Tu sitio de helados ideal",
   description: "Tu sitio de helados preferencial",
   navItems: [
     {
@@ -10,11 +10,11 @@ export const siteConfig = {
     },
     {
       label: "Sobre Nosotros",
-      href: "/docs",
+      href: "/nosotros",
     },
     {
       label: "Precios",
-      href: "/precio",
+      href: "/precios",
     },
     {
       label: "Publicaciones",
@@ -27,36 +27,24 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Inicio",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Sobre Nosotros",
+      href: "/nosotros",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Precios",
+      href: "/precios",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Publicaciones",
+      href: "/publicaciones",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contacto",
+      href: "/contacto",
     },
   ],
   links: {
