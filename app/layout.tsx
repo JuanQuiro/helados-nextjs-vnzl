@@ -51,8 +51,9 @@ export default function RootLayout({
                 href="https://www.linkedin.com/in/dreyz/"
                 title="linkedin del desarrollador"
               >
-                <span className="text-default-600">Pagina creada por</span>
-                <p className="text-orange-500">&ensp;Juan Quiroz</p>
+                <span className="text-default-600">
+                  Todos los derechevos reservados 2023 ©
+                </span>
               </Link>
             </footer>
           </div>

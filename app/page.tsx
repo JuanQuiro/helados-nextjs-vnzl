@@ -1,9 +1,10 @@
-import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { Button } from "@nextui-org/button";
-import Link from "next/link";
+import { getHelados } from "@/sanity-utilis";
+import { log } from "console";
 
-export default function Home() {
+export default async function Home() {
+  const helados = await getHelados();
+  log(helados);
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-lg text-center justify-center mb-5">
@@ -14,20 +15,14 @@ export default function Home() {
           Mas Ricos al Mejor Precio
         </h1>
       </div>
-
-      <div className="flex gap-8">
-        <Link href={"precios"}>
-          <Button color="default" className="bg-blue-500">
-            Precios
-          </Button>
-        </Link>
-
-        <Link href={siteConfig.navMenuItems[4].href}>
-          <Button color="default" variant="bordered">
-            Contacto
-          </Button>
-        </Link>
-      </div>
+      {helados.map((helado) => (
+        <div key={helado._id}>
+          <h3>{helado.name}</h3>
+          <p>{helado.image}</p>
+          <p>{helado.description}</p>
+          <p>{helado.price}</p>
+        </div>
+      ))}
     </section>
   );
 }

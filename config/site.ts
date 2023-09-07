@@ -13,14 +13,6 @@ export const siteConfig = {
       href: "/nosotros",
     },
     {
-      label: "Precios",
-      href: "/precios",
-    },
-    {
-      label: "Publicaciones",
-      href: "/publicaciones",
-    },
-    {
       label: "Contacto",
       href: "/contacto",
     },
@@ -33,14 +25,6 @@ export const siteConfig = {
     {
       label: "Sobre Nosotros",
       href: "/nosotros",
-    },
-    {
-      label: "Precios",
-      href: "/precios",
-    },
-    {
-      label: "Publicaciones",
-      href: "/publicaciones",
     },
     {
       label: "Contacto",

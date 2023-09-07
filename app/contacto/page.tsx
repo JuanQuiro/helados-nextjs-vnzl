@@ -1,7 +1,7 @@
 import { title } from "@/components/primitives";
 
 const WhatsAppShare = () => {
-  const phoneNumber = "123456789"; // Aquí debes colocar tu número de WhatsApp
+  const phoneNumber = "584244125805"; // Aquí debes colocar tu número de WhatsApp
 
   return (
     <div className="container mx-auto">
