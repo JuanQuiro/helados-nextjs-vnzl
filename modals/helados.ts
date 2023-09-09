@@ -3,7 +3,7 @@ export type Helado = {
   _createdAt: Date;
   name: string;
   image: string;
-  description: string;
-  url: string;
+  alt: string;
   price: number;
+  description: string;
 };
