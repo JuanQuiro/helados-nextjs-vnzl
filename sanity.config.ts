@@ -7,6 +7,8 @@ export const config = defineConfig({
   dataset: "production",
   title: "heladeria",
   basePath: "/admin",
+  useCdn: false,
+  apiVersion: "2023-09-09",
   plugins: [deskTool()],
   schema: { types: [helado] },
 });
