@@ -1,5 +1,6 @@
 import { nextui } from "@nextui-org/theme";
 import daisyui from "daisyui";
+import tw from "tailwind-scrollbar";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,8 +11,12 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+      },
+    },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui(), tw({ nocompatible: true })],
 };

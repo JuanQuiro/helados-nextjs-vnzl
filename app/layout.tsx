@@ -34,7 +34,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen  bg-background font-sans antialiased",
+          "min-h-screen scrollbar scrollbar-thumb-orange-500 scrollbar-track-white scrollbar-w-1  bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
@@ -47,12 +47,15 @@ export default function RootLayout({
             <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
-                className="flex items-center gap-1 text-current"
+                className="flex items-center group gap-1 text-current"
                 href="https://www.linkedin.com/in/dreyz/"
                 title="linkedin del desarrollador"
               >
                 <span className="text-default-600">
-                  Todos los derechevos reservados 2023 ©
+                  Todos los derechevos reservados 2023 ©{" "}
+                </span>
+                <span className="text-default-600 group-hover:text-blue-500/80">
+                  - Dev Juan Quiroz
                 </span>
               </Link>
             </footer>

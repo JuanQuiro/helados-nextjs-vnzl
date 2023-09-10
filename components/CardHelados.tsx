@@ -25,12 +25,16 @@ const CardHelado = (prop: Prop) => {
 
   return (
     <>
-      <Card isFooterBlurred className="w-full h-[300px] col-span-1">
+      <Card isFooterBlurred className="w-full group h-[300px] col-span-1">
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <p className="text-tiny text-black uppercase font-bold bg-white rounded-full">
-            {prop.index}
-          </p>
-          <h4 className="text-white font-medium text-2xl">{prop.nombre}</h4>
+          <div className="flex items-center">
+            <span className="text-tiny  duration-700 group-hover:text-orange-500 inline p-1 text-black uppercase font-bold bg-white rounded-full">
+              {prop.index}
+            </span>
+            <h4 className=" font-medium text-2xl group-hover:underline group-hover:decoration-solid text-white group-hover:text-orange-500 capitalize duration-500 decoration-orange-700">
+              - {prop.nombre}
+            </h4>
+          </div>
         </CardHeader>
         <Image
           removeWrapper
@@ -44,7 +48,7 @@ const CardHelado = (prop: Prop) => {
             <p className="text-black text-tiny">Compra ahora 😍</p>
           </div>
           <Button
-            className="text-tiny bg-green-700"
+            className="text-tiny hover:text-black hover:bg-white duration-500 bg-green-700"
             color="primary"
             radius="full"
             size="sm"
