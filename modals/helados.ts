@@ -6,4 +6,5 @@ export type Helado = {
   alt: string;
   price: number;
   description: string;
+  leyend: string;
 };

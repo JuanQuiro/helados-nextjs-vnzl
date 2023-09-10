@@ -15,6 +15,7 @@ name,
 description,
 "image": image.asset->url,
 "alt": image.alt,
-price
+price,
+leyend
 }`);
 }

@@ -15,6 +15,12 @@ const helado = {
       of: [{ type: "block" }],
     },
     {
+      name: "leyend",
+      title: "Leyenda",
+      type: "string",
+      of: [{ type: "block" }],
+    },
+    {
       name: "price",
       title: "Precio del helado(Poner en titulo si es al menor o detal)",
       type: "number",

@@ -20,12 +20,12 @@ export default async function Home() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
         {helados.map((helado, index) => (
           <CardHelado
+            leyend={helado.leyend}
             description={helado.description}
             key={index}
-            alt={helado.alt}
             nombre={helado.name}
             precio={helado.price}
-            leyenda={helado.alt}
+            alt={helado.alt}
             index={index}
             img={helado.image}
           />

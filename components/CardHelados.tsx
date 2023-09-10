@@ -13,11 +13,11 @@ import {
 type Prop = {
   index: number;
   nombre: string;
-  leyenda: string;
   alt: string;
   precio: number;
   img: string;
   description: string;
+  leyend: string;
 };
 
 const CardHelado = (prop: Prop) => {
@@ -44,7 +44,7 @@ const CardHelado = (prop: Prop) => {
         />
         <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
           <div>
-            <p className="text-black text-tiny">{prop.leyenda}</p>
+            <p className="text-black text-tiny">{prop.leyend}</p>
             <p className="text-black text-tiny">Compra ahora 😍</p>
           </div>
           <Button
